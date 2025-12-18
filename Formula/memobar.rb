@@ -36,6 +36,11 @@ class Memobar < Formula
       Usage:
         memobar version                  # Show current version
         memobar --help                   # Show all commands
+
+      macOS Tahoe (26+):
+        If you see a dialog about accessing data from other apps,
+        grant Full Disk Access to your terminal:
+        System Settings → Privacy & Security → Full Disk Access
     EOS
   end
 
