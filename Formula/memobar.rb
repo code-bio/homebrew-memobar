@@ -8,11 +8,9 @@ class Memobar < Formula
   depends_on :macos
 
   def install
-    # Install binary and frameworks together in libexec (preserves original rpath)
     libexec.install "memobar"
     (libexec/"Frameworks").install Dir["Frameworks/*"]
 
-    # Symlink to bin - no signature modification needed
     bin.install_symlink libexec/"memobar"
   end
 
@@ -28,7 +26,6 @@ class Memobar < Formula
   end
 
   test do
-    # Test that version command runs without error
     assert_match(/memobar|version/i, shell_output("#{bin}/memobar version", 0))
   end
 end
