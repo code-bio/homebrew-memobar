@@ -2,8 +2,8 @@ class Memobar < Formula
   desc "CLI tool for memoBar"
   homepage "https://memobar.app"
   # Real URL - post_install re-downloads to preserve code signature
-  url "https://github.com/code-bio/homebrew-memobar/releases/download/v0.3.4/memobar-cli-0.3.4.tar.gz"
-  sha256 "00bb96aff6a8cb7613ef555ade330f125bbbf371df9a86ec69ad9157b245bec3"
+  url "https://github.com/code-bio/homebrew-memobar/releases/download/v0.3.5/memobar-cli-0.3.5.tar.gz"
+  sha256 "ffd8f8b0ff43ff2e936d711a022d8b9fb27501b7f0c45b51822340a334361817"
   license "Copyright 2025 Christian Franzl, code.bio GmbH"
 
   depends_on :macos
@@ -15,7 +15,7 @@ class Memobar < Formula
 
   def post_install
     # Download and extract AFTER Homebrew's post-processing
-    tarball_url = "https://github.com/code-bio/homebrew-memobar/releases/download/v0.3.4#{version}/memobar-cli-#{version}.tar.gz"
+    tarball_url = "https://github.com/code-bio/homebrew-memobar/releases/download/v0.3.5#{version}/memobar-cli-#{version}.tar.gz"
 
     # Clear and re-extract to preserve signatures
     system "rm", "-rf", libexec/"memobar", libexec/"Frameworks"
