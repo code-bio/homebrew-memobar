@@ -2,8 +2,8 @@ class Channelbar < Formula
   desc "CLI tool for channelBar"
   homepage "https://channelbar.app"
   # Real URL - post_install re-downloads to preserve code signature
-  url "https://github.com/code-bio/homebrew-channelbar/releases/download/v0.9.4/channelbar-cli-0.9.4.tar.gz"
-  sha256 "1d5bfd5d06bc836dc5640878788d9d68dee47ac068ebfda4f8221dbeddbf36ca"
+  url "https://github.com/code-bio/homebrew-channelbar/releases/download/v0.9.5/channelbar-cli-0.9.5.tar.gz"
+  sha256 "ce3b6807a647c7d088d55f1026ec0b35bd8504bbbeded0c22cafefa4155a8f39"
   license "Copyright © 2026 code.bio GmbH"
 
   depends_on :macos
